@@ -38,9 +38,7 @@ export class Pagina extends React.Component {
 
 		return (
 			<div className="home ">
-				<div className="navbar-brand">
-					<Navbar />
-				</div>
+				<div className="navbar-brand" />
 				<div>
 					<hr className="hr-top col-lg-10 col-md-6 col-sm-6 col-xs-6 " />
 					<p className="categories">People</p>
