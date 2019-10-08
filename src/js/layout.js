@@ -9,7 +9,7 @@ import { Navbar } from "./component/Navbar";
 import { Footer } from "./component/footer";
 import { People } from "./component/People";
 import { Planets } from "./component/Planets";
-
+import { Datails } from "./component/Datails";
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -23,8 +23,8 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Pagina} />
-						<Route path="/People" component={People} />
 						<Route path="/Planets" component={Planets} />
+						<Route path="/Datails" component={Datails} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
