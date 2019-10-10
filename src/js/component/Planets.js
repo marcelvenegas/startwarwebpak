@@ -17,7 +17,7 @@ export class Planets extends React.Component {
 					<h5 className="card-subtitle mb-2 text-muted">Climate: {this.props.gender}</h5>
 					<h6 className="card-subtitle mb-2 text-muted">Terrains: {this.props.eye_color}</h6>
 					<button type="button" className="btn btn-outline-primary">
-						<Link to="/Planets"> More Info</Link>
+						<Link to="/Datails"> More Info</Link>
 					</button>
 				</div>
 			</div>

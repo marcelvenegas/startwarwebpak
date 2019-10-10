@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //import { Datails } from "./component/Datails";
 
 export class People extends React.Component {
-	render(props) {
+	render() {
 		return (
 			<div className="card-characters card col-lg-6 col-md-6  ">
 				<div className="card-body">
@@ -14,7 +14,7 @@ export class People extends React.Component {
 					<h5 className="card-subtitle mb-2 text-muted">Gender: {this.props.gender}</h5>
 					<h6 className="card-subtitle mb-2 text-muted">Eye Color: {this.props.eye_color}</h6>
 					<button type="button" className="btn btn-outline-primary">
-						<Link to="/Datails"> More Info</Link>
+						<Link to={"/Datails/" + this.props.type + "/" + this.props.id}> More Info</Link>
 					</button>
 				</div>
 			</div>
@@ -24,5 +24,7 @@ export class People extends React.Component {
 People.propTypes = {
 	name: PropTypes.string,
 	gender: PropTypes.string,
-	eye_color: PropTypes.string
+	eye_color: PropTypes.string,
+	id: PropTypes.number,
+	type: PropTypes.string
 };

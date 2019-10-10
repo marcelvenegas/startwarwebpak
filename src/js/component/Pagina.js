@@ -29,11 +29,30 @@ export class Pagina extends React.Component {
 	}
 	render() {
 		let people1 = this.state.character.map((item, index) => {
-			return <People key={index} name={item.name} gender={item.gender} eye_color={item.eye_color} />;
+			let x = item.url;
+			let x1 = x.substr(28);
+			let x2 = parseInt(x1);
+			let y = item.url;
+			let y1 = y.substr(23);
+			return (
+				<People
+					key={index}
+					id={x2}
+					name={item.name}
+					type={"People"}
+					gender={item.gender}
+					eye_color={item.eye_color}
+				/>
+			);
 		});
 
 		let planet1 = this.state.planet.map((item, index) => {
-			return <Planets key={index} name={item.name} climate={item.climate} terrain={item.terrain} />;
+			let x = item.url;
+			let x1 = x.substr(28);
+			let x2 = parseInt(x1);
+			let y = item.url;
+			let y1 = y.substr(23);
+			return <Planets key={index} id={x2} name={item.name} climate={item.climate} terrain={item.terrain} />;
 		});
 
 		return (

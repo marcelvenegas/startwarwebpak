@@ -9,8 +9,9 @@ export class Datails extends React.Component {
 				<body>
 					<img className="card-img-top" src="https://i.ytimg.com/vi/_q51LZ2HpbE/maxresdefault.jpg" alt=" " />
 					<h3 className="title card-title">
-						Yoda is an expert at turning defense into attack, using the Force to absorb blaster fire, heal
-						his wounds, and protect him from harm while using his lightsaber to inflict damage.
+						<h4 className="card-subtitle mb-2 text-muted">Name: </h4>
+						<h5 className="card-subtitle mb-2 text-muted">Gender: </h5>
+						<h6 className="card-subtitle mb-2 text-muted">Eye Color: </h6>
 					</h3>
 				</body>
 			</div>
