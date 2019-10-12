@@ -48,7 +48,7 @@ export class Pagina extends React.Component {
 
 		let planet1 = this.state.planet.map((item, index) => {
 			let x = item.url;
-			let x1 = x.substr(28);
+			let x1 = x.substr(29);
 			let x2 = parseInt(x1);
 			let y = item.url;
 			let y1 = y.substr(23);

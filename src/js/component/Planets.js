@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 export class Planets extends React.Component {
 	render() {
+		console.log("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", this.props);
+
 		return (
 			<div className="card-characters card col-lg-6 col-md-6  ">
 				<div className="card-body">
