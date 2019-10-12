@@ -52,7 +52,16 @@ export class Pagina extends React.Component {
 			let x2 = parseInt(x1);
 			let y = item.url;
 			let y1 = y.substr(23);
-			return <Planets key={index} id={x2} name={item.name} climate={item.climate} terrain={item.terrain} />;
+			return (
+				<Planets
+					key={index}
+					id={x2}
+					name={item.name}
+					type={"Planet"}
+					climate={item.climate}
+					terrain={item.terrain}
+				/>
+			);
 		});
 
 		return (

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export class Planets extends React.Component {
-	render(props) {
+	render() {
 		return (
 			<div className="card-characters card col-lg-6 col-md-6  ">
 				<div className="card-body">
@@ -17,7 +17,7 @@ export class Planets extends React.Component {
 					<h5 className="card-subtitle mb-2 text-muted">Climate: {this.props.gender}</h5>
 					<h6 className="card-subtitle mb-2 text-muted">Terrains: {this.props.eye_color}</h6>
 					<button type="button" className="btn btn-outline-primary">
-						<Link to="/Datails"> More Info</Link>
+						<Link to={"/datails/planets/" + this.props.id}> More Info</Link>
 					</button>
 				</div>
 			</div>
@@ -27,5 +27,7 @@ export class Planets extends React.Component {
 Planets.propTypes = {
 	name: PropTypes.string,
 	gender: PropTypes.string,
-	eye_color: PropTypes.string
+	eye_color: PropTypes.string,
+	id: PropTypes.number,
+	type: PropTypes.string
 };

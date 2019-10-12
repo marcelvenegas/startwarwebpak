@@ -23,9 +23,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Pagina} />
-						<Route path="/Planets" component={Planets} />
-						<Route path="/People" component={People} />
-						<Route path="Datails/:name/:theid" component={Datails} />
+						<Route exact path="/datails/:name/:theid" component={Datails} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
