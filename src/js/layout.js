@@ -10,6 +10,7 @@ import { Footer } from "./component/footer";
 import { People } from "./component/People";
 import { Planets } from "./component/Planets";
 import { Datails } from "./component/Datails";
+
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain

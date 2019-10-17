@@ -12,6 +12,10 @@ export class Navbar extends React.Component {
 	render() {
 		return (
 			<nav className="navbar navbar-dark bg-dark mb-3">
+				<img
+					src="http://logo-load.com/uploads/posts/2016-02/1456297907_star-wars-logo.png"
+					style={{ width: "60px" }}
+				/>
 				<div className="dropdown ">
 					<button
 						onClick={() => {
@@ -39,7 +43,6 @@ export class Navbar extends React.Component {
 						</a>
 					</div>
 				</div>
-
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
 				</Link>

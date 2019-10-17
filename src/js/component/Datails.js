@@ -25,8 +25,12 @@ export class Datails extends React.Component {
 						<h4 className="card-subtitle mb-2 text-muted">
 							Name: {this.props.match.params.name}: {this.state.item.name}
 						</h4>
-						<h5 className="card-subtitle mb-2 text-muted">Gender: </h5>
-						<h6 className="card-subtitle mb-2 text-muted">Eye Color: </h6>
+						<h5 className="card-subtitle mb-2 text-muted">
+							Gender:{this.props.match.params.gender}: {this.state.item.gender}{" "}
+						</h5>
+						<h6 className="card-subtitle mb-2 text-muted">
+							Eye Color:{this.props.match.params.eye_colo}: {this.state.item.eye_color}{" "}
+						</h6>
 					</h3>
 				</body>
 			</div>
