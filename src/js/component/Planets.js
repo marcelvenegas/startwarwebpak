@@ -16,8 +16,8 @@ export class Planets extends React.Component {
 					/>
 					<h3 className="title card-title" />
 					<h4 className="card-subtitle mb-2 text-muted">Name: {this.props.name}</h4>
-					<h5 className="card-subtitle mb-2 text-muted">Climate: {this.props.gender}</h5>
-					<h6 className="card-subtitle mb-2 text-muted">Terrains: {this.props.eye_color}</h6>
+					<h5 className="card-subtitle mb-2 text-muted">Climate: {this.props.climate}</h5>
+					<h6 className="card-subtitle mb-2 text-muted">Terrains: {this.props.terrain}</h6>
 					<button type="button" className="btn btn-outline-primary">
 						<Link to={"/datails/planets/" + this.props.id}> More Info</Link>
 					</button>
@@ -28,8 +28,8 @@ export class Planets extends React.Component {
 }
 Planets.propTypes = {
 	name: PropTypes.string,
-	gender: PropTypes.string,
-	eye_color: PropTypes.string,
+	climate: PropTypes.string,
+	terrain: PropTypes.string,
 	id: PropTypes.number,
 	type: PropTypes.string
 };

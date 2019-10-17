@@ -10,7 +10,6 @@ export class Datails extends React.Component {
 	}
 
 	componentDidMount() {
-		console.log("Se esta ejecutando");
 		fetch(`https://swapi.co/api/${this.props.match.params.name}/${this.props.match.params.theid}`)
 			.then(res => res.json())
 			.then(data => this.setState({ item: data }));
